@@ -57,8 +57,10 @@ export function assert(expression, err_msg) {
   if (!expression) {
     if (IsStrEmpty(err_msg)) {
       console.log(`[ASSERT] Assertion Failed: ${err_msg}`);
+      return 1;
     } else {
       console.log(`[ASSERT] Assertion Failed`);
+      return 1;
     }
   }
 }
