@@ -16,6 +16,6 @@ A simple logging library for javascript
 # What's Next?
 You can see all of the stuff im trying to make inside of [TODOS.md](TODOS.md). If there is anything else you want you can
 - 1.Create a pull request
-- 2. Email me at noaharvan1@gmail.com
+- 2.Email me at noaharvan1@gmail.com
 # Credits
 Just me
