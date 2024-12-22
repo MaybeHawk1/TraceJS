@@ -108,11 +108,10 @@ export function warn(...warn_msgs) {
 }
 
 export function success(...msgs) {
-    console.log("Succeses");
+    console.group("Success");
     msgs.forEach((msg) => {
-        console.log("[SUCESS] " + msg);
+        console.log("[SUCCESS] " + msg);
     })
     console.groupEnd()
 }
-
 // End of region
