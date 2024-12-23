@@ -83,22 +83,40 @@ export function assert(expression, err_msg, err_code) {
 
 // Region: Logging
 
+
+/*
+ * start the grouping for the loggger
+ */
 export function logger_group_start() {
     console.group("Logs");
 }
 
+/*
+ * End the grouping for the logger
+ */
 export function logger_group_end() {
     console.groupEnd();
 }
 
+/*
+ * prints out an error passed to it
+ * @param {string} err_msgs - Either one or multipke error messages
+ * @returns {number} - error code
+ */
 export function error(...err_msgs) {
     console.group("Errors");
     err_msgs.forEach((err_msg) => {
         console.error("[ERROR] " + err_msg);
+        return 1;
     })
     console.groupEnd();
 }
 
+/*
+ * prints out an warning passed to it
+ * @param {string} warn_msgs - Either one or multipke error messages
+ * @returns {null} - nothing
+ */
 export function warn(...warn_msgs) {
     console.group("Warnings");
     warn_msgs.forEach((warn_msg) => {
@@ -107,12 +125,33 @@ export function warn(...warn_msgs) {
     console.groupEnd();
 }
 
+/*
+ *  prints out a message indicating something was done with success
+ *  @param {string} msgs - the message that is gonna be printed
+ *  @returns {null}
+ */
 export function success(...msgs) {
-    console.log("Succeses");
+    console.group("Succeses");
     msgs.forEach((msg) => {
         console.log("[SUCESS] " + msg);
     })
     console.groupEnd()
 }
 
+/*
+ * logs a fatal warning
+ * @param {string} warn_msgs - The warning messages.
+ * @param {number} err_code - The error code.
+ * @returns {number} - returns err_code if it is not null.
+ */
+export function fatal_warn(...warn_msgs, err_code) {
+    console.group("Fatal Warnings");
+    warn_msgs.forEach((msg) => {
+        console.log("[FATAL] " + msg);
+    });
+
+    if (err_code != null) {
+        return err_code;
+    }
+}
 // End of region
