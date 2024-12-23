@@ -144,7 +144,7 @@ export function success(...msgs) {
  * @param {number} err_code - The error code.
  * @returns {number} - returns err_code if it is not null.
  */
-export function fatal_warn(...warn_msgs, err_code) {
+export function fatal_warn(err_code, ...warn_msgs) {
     console.group("Fatal Warnings");
     warn_msgs.forEach((msg) => {
         console.log("[FATAL] " + msg);

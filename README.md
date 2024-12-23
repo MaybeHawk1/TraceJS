@@ -1,13 +1,17 @@
 # TraceJS
+![TraceJS Logo](assets/TraceJS_logo.png)
 ![Static Badge](https://img.shields.io/badge/Release-1.0-blue)
 ![Static Badge](https://img.shields.io/badge/Made_In-JS-yellow)
 
 A simple logging library for javascript
 
 # Table of Contents
-- [Functions](#Functions)
-    - [Asserts](#Asserts)
-- [Credits](#Credits)
+- [TraceJS](#tracejs)
+- [Table of Contents](#table-of-contents)
+- [Functions](#functions)
+    - [Asserts](#asserts)
+- [What's Next?](#whats-next)
+- [Credits](#credits)
 
 # Functions
 ### Asserts
