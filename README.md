@@ -1,5 +1,7 @@
 # TraceJS
-![TraceJS_logo](assets/TraceJS_logo.png)
+<p align=center>
+    <img src="./assets/TraceJS_logo.png">
+</p>
 ![Static Badge](https://img.shields.io/badge/Release-1.0-blue)
 ![Static Badge](https://img.shields.io/badge/Made_In-JS-yellow)
 
