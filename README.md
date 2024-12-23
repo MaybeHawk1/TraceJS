@@ -3,6 +3,7 @@ A simple logging library for javascript
 
 # Table of Contents
 - [Functions](#Functions)
+    - [Asserts](#Asserts)
 - [Credits](#Credits)
 
 # Functions
