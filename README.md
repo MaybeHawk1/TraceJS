@@ -1,7 +1,7 @@
-# TraceJS
-![Logo](./assets/TraceJS_banner.png)
+# <img src="./assets/TraceJS_logo_32x32.png" width="20" height="20" style="margin-right: 3px;">TraceJS
 ![Static Badge](https://img.shields.io/badge/Release-1.0-blue)
 ![Static Badge](https://img.shields.io/badge/Made_In-JS-yellow)
+![Logo](./assets/TraceJS_banner.png)
 
 A simple logging library for javascript
 
