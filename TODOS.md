@@ -2,4 +2,4 @@
 - [x] Assertion
 - [x] Logging
 - [ ] Logging to files
-- [ ] Fix banner and small logo
+- [x] Fix banner and small logo
